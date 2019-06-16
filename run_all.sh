@@ -12,7 +12,7 @@ text_corpus_path= dir + "/deepspeech-german/corpus/German_sentences_8mil_filtere
 exp_path= dir + "/deepspeech-german/exp"
 
 kenlm_bin="/cluster/data/project_kws/tools/kenlm/build/bin"
-deepspeech= dir + "/DeepSpeech"
+deepspeech= dir + "/deepspeech-german/DeepSpeech"
 
 # Download/Prepare Data
 # ./prepare_data.py $exp_path/data --tuda $tuda_corpus_path --voxforge $voxforge_corpus_path --swc $swc_corpus_path

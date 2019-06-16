@@ -104,3 +104,4 @@ ENV/
 
 # data
 corpus/
+DeepSpeech/
