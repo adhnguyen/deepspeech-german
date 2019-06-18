@@ -11,7 +11,7 @@ text_corpus_path= dir + "/deepspeech-german/corpus/German_sentences_8mil_filtere
 
 exp_path= dir + "/deepspeech-german/exp"
 
-kenlm_bin="/cluster/data/project_kws/tools/kenlm/build/bin"
+kenlm_bin= dir + "/deepspeech-german/tools/kenlm/build/bin"
 deepspeech= dir + "/deepspeech-german/DeepSpeech"
 
 # Download/Prepare Data
