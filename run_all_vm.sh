@@ -12,11 +12,11 @@ text_corpus_path= dir + "/deepspeech-german/corpus/German_sentences_8mil_filtere
 exp_path= dir + "/deepspeech-german/exp"
 
 kenlm_bin= dir + "/deepspeech-german/tools/kenlm/build/bin"
-deepspeech= dir + "/deepspeech-german/DeepSpeech"
+deepspeech= dir + "/deepspeech-german/code/DeepSpeech"
 
 # Download/Prepare Data
-# ./prepare_data.py $exp_path/data --tuda $tuda_corpus_path --voxforge $voxforge_corpus_path --swc $swc_corpus_path
-./prepare_data.py $exp_path/data --tuda $tuda_corpus_path --swc $swc_corpus_path
+./prepare_data.py $exp_path/data --tuda $tuda_corpus_path --voxforge $voxforge_corpus_path --swc $swc_corpus_path
+# ./prepare_data.py $exp_path/data --tuda $tuda_corpus_path --swc $swc_corpus_path
 
 # Create LM
 ./prepare_vocab.py $text_corpus_path $exp_path/cleaned_vocab.txt --training_csv $exp_path/data/train.csv
