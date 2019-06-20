@@ -4,15 +4,15 @@ set -xe
 
 dir = '/home/anhnguyen'
 
-tuda_corpus_path= dir + "/deepspeech-german/corpus/tuda"
-voxforge_corpus_path= dir + "/deepspeech-german/corpus/voxforge_de"
-swc_corpus_path= dir + "/deepspeech-german/corpus/swc"
-text_corpus_path= dir + "/deepspeech-german/corpus/German_sentences_8mil_filtered_maryfied.txt"
+tuda_corpus_path= "$dir/deepspeech-german/corpus/tuda"
+voxforge_corpus_path= "$dir/deepspeech-german/corpus/voxforge_de"
+swc_corpus_path= "$dir/deepspeech-german/corpus/swc"
+text_corpus_path= "$dir/deepspeech-german/corpus/German_sentences_8mil_filtered_maryfied.txt"
 
-exp_path= dir + "/deepspeech-german/exp"
+exp_path="$dir/deepspeech-german/exp"
 
-kenlm_bin= dir + "/deepspeech-german/tools/kenlm/build/bin"
-deepspeech= dir + "/deepspeech-german/code/DeepSpeech"
+kenlm_bin="$dir/deepspeech-german/tools/kenlm/build/bin"
+deepspeech="$dir/deepspeech-german/code/DeepSpeech"
 
 # Download/Prepare Data
 ./prepare_data.py $exp_path/data --tuda $tuda_corpus_path --voxforge $voxforge_corpus_path --swc $swc_corpus_path

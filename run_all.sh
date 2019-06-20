@@ -1,18 +1,19 @@
-#!/usr/bin/env bash
+# !/usr/bin/env bash
 
 set -xe
 
-dir = '/Users/anhnguyen/Downloads/projects/imperial-project'
+dir="/Users/anhnguyen/Downloads/projects/imperial-project"
+corpus_dir="/Volumes/Toshiba-adhn/corpus"
 
-tuda_corpus_path= dir + "/deepspeech-german/corpus/tuda"
-voxforge_corpus_path= dir + "/deepspeech-german/corpus/voxforge_de"
-swc_corpus_path= dir + "/deepspeech-german/corpus/swc"
-text_corpus_path= dir + "/deepspeech-german/corpus/German_sentences_8mil_filtered_maryfied.txt"
+tuda_corpus_path="$corpus_dir/tuda"
+voxforge_corpus_path="$corpus_dir/voxforge_de"
+swc_corpus_path="$corpus_dir/swc"
+text_corpus_path="$corpus_dir/German_sentences_8mil_filtered_maryfied.txt"
 
-exp_path= dir + "/deepspeech-german/exp"
+exp_path="$dir/deepspeech-german/exp"
 
-kenlm_bin= dir + "/deepspeech-german/tools/kenlm/build/bin"
-deepspeech= dir + "/deepspeech-german/code/DeepSpeech"
+kenlm_bin="$dir/deepspeech-german/tools/kenlm/build/bin"
+deepspeech="$dir/deepspeech-german/code/DeepSpeech"
 
 # Download/Prepare Data
 ./prepare_data.py $exp_path/data --tuda $tuda_corpus_path --voxforge $voxforge_corpus_path --swc $swc_corpus_path

@@ -16,6 +16,7 @@ import sys
 import os
 import re
 
+# scp_file = '/home/anhnguyen/deepspeech-german/code/output/wav.scp'
 scp_file = '/Users/anhnguyen/Downloads/projects/imperial-project/deepspeech-german/code/output/wav.scp'
 article_dir = '../../corpus/swc/german'
 
