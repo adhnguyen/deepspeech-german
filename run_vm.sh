@@ -1,13 +1,13 @@
-#!/usr/bin/env bash
+# !/usr/bin/env bash
 
 set -xe
 
-dir = '/home/anhnguyen'
+dir='/home/anhnguyen'
 
-tuda_corpus_path= "$dir/deepspeech-german/corpus/tuda"
-voxforge_corpus_path= "$dir/deepspeech-german/corpus/voxforge_de"
-swc_corpus_path= "$dir/deepspeech-german/corpus/swc"
-text_corpus_path= "$dir/deepspeech-german/corpus/German_sentences_8mil_filtered_maryfied.txt"
+tuda_corpus_path="$dir/deepspeech-german/corpus/tuda"
+voxforge_corpus_path="$dir/deepspeech-german/corpus/voxforge_de"
+swc_corpus_path="$dir/deepspeech-german/corpus/swc"
+text_corpus_path="$dir/deepspeech-german/corpus/German_sentences_8mil_filtered_maryfied.txt"
 
 exp_path="$dir/deepspeech-german/exp"
 
