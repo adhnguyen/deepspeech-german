@@ -16,12 +16,16 @@ import sys
 import os
 import re
 
-# scp_file = '/home/anhnguyen/deepspeech-german/code/output/wav.scp'
-scp_file = '/Users/anhnguyen/Downloads/projects/imperial-project/deepspeech-german/code/output/wav.scp'
-article_dir = '../../corpus/swc/german'
+# scp_file = '/Users/anhnguyen/Downloads/projects/imperial-project/deepspeech-german/code/output/wav.scp'
+# article_dir = '/Volumes/Toshiba-adhn/corpus/swc/german/'
+# /Users/anhnguyen/Downloads/projects/imperial-project/deepspeech-german/code/output/wav.scp /Volumes/Toshiba-adhn/corpus/swc/german/
 
-# scp_file = sys.argv[1]
-# article_dir = sys.argv[2]
+# scp_file = '/home/anhnguyen/deepspeech-german/code/output/wav.scp'
+# article_dir = '../../corpus/swc/german'
+# /home/anhnguyen/deepspeech-german/code/output/wav.scp ../../corpus/swc/german
+
+scp_file = sys.argv[1]
+article_dir = sys.argv[2]
 
 pattern = re.compile(r'.*articles/(.*)/audio.*')
 
