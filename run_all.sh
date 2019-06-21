@@ -7,10 +7,10 @@ corpus_dir="/Volumes/Toshiba-adhn/corpus"
 
 tuda_corpus_path="$corpus_dir/tuda"
 voxforge_corpus_path="$corpus_dir/voxforge_de"
-swc_corpus_path="$corpus_dir/swc"
+swc_corpus_path="$dir/deepspeech-german/code/output"
 text_corpus_path="$corpus_dir/German_sentences_8mil_filtered_maryfied.txt"
 
-exp_path="$dir/deepspeech-german/exp"
+exp_path="$corpus_dir/deepspeech-german/exp"
 
 kenlm_bin="$dir/deepspeech-german/tools/kenlm/build/bin"
 deepspeech="$dir/deepspeech-german/code/DeepSpeech"
